@@ -8,3 +8,5 @@ Our bot can do all these things with scope for more to come!
 - 🎗️ Get continuous reminders to drink water, go to sleep and have an overall healthy lifestyle
 - 🧮 A scientific calculator available for the students' immediate need
 - 🎵 Songs for relaxation after a long day's work!
+
+## Commands Directory
