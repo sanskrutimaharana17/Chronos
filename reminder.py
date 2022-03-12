@@ -6,11 +6,11 @@ import pytz
 
 client= discord.Client()
 
-seconds_in_year= 8
+seconds_in_year=20
 #31536000
-seconds_in_day= 10
+seconds_in_day= 5
 #86400
-seconds_in_hour=2
+seconds_in_hour=4
 #3600
 
 #function to check if it's time to give a reminder
@@ -20,7 +20,6 @@ def time_module(user_time_input):
     while True:
       tz_IN = pytz.timezone('Asia/Kolkata') 
       datetime_IN = datetime.now(tz_IN)
-      now= datetime.now()
       current_time = datetime_IN.strftime("%H:%M")
       #print(current_time)
       #check if it's time for the reminder to start
@@ -42,7 +41,7 @@ async def on_message(message):
 
 #main menu for selection
   if message.content.startswith('!remind'):
-    await channel.send('Hello! \nWhat should I remind you about? Choose from:\n !education\n !health\n !custom')
+    await channel.send('Hello :) \nWhat should I remind you about? Choose from:\n !education\n !health\n !custom')
 
     def check(m):
       return m.content in ['!education', '!health', '!custom'] and m.channel==channel
@@ -60,7 +59,7 @@ async def on_message(message):
       msg= await client.wait_for('message', check=check)
       
       if msg.content == '!homework':
-      await channel.send("Cool :)\nShould I remind you '!hourly' or '!daily'?")
+        await channel.send("Cool :)\nShould I remind you !hourly or !daily ?")
         
         def check(m):
           return m.content in ['!hourly', '!daily'] and m.channel==channel
@@ -122,7 +121,7 @@ async def on_message(message):
         await channel.send("Invalid Input :(")
         
     #Health menu
-    elif msg.content == 'Health':
+    elif msg.content == '!health':
       await channel.send("Cool :)\nHere's things you can do!!\n !water\n !medicines\n !sleep")
 
       #if user selects water reminder
@@ -132,10 +131,10 @@ async def on_message(message):
       msg= await client.wait_for('message', check=check)
       
       if msg.content == '!water':
-        await channel.send("Cool :)\nShould I remind you '!hourly' or '!daily'?")
+        await channel.send("Cool :)\nShould I remind you !hourly or !daily ?")
         
         def check(m):
-        return m.content in ['!hourly', '!daily'] and m.channel==channel
+          return m.content in ['!hourly', '!daily'] and m.channel==channel
     
         msg= await client.wait_for('message', check=check)
 
@@ -194,14 +193,24 @@ async def on_message(message):
       else:
         await channel.send("Invalid selection :(")
       
+     #custom part implementation
     else :
       await channel.send("What should I remind you about?")
       
       def check(m):
-          return m.channel==channel
-        msg= await client.wait_for('message', check=check)
-        #custom part implementation
+        return m.channel==channel
+      text= await client.wait_for('message', check=check)
+       
+      await channel.send("Enter time in HH:MM")
+      def check(m):
+        return m.channel==channel
+      msg= await client.wait_for('message', check=check)
+      await channel.send("Reminder set!")
+      timer= str(msg.content)
         
+      time_module(timer)
+      await channel.send("Reminder!!!")
+      await channel.send(text.content)
         
     
 #running the bot
