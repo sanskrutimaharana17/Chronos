@@ -12,6 +12,9 @@ Our bot can do all these things with scope for more to come!
 ## Commands Directory 💼
 
 
+## How it works 📑
+
+
 ## Meet the team 👩‍💻👩‍💻👩‍💻👩‍💻
 ### 🌠Nitya Pasrija
 - 👋 Hi, I’m [Nitya-Pasrija](https://github.com/Nitya-Pasrija)
@@ -41,3 +44,10 @@ Our bot can do all these things with scope for more to come!
 - 👨‍💻 All of my projects are available at https://github.com/aceta-minophen
 - 💬 Ask me about Arduino, IoT, Robotics
 - 📫 How to reach me sukritee.sharma@gmail.com
+
+## History 📘
+This team was formed for the sake of [She**Hacks**](https://shehacks.co/), the biggest female hackathon of the year 2022, organized by  IIIT Allahabad.
+
+We, as students, know how hectic it could be to manage all the different assignments we get, the tests we have to take and all the competitions or hackathons that we are encouraged to participate in. It sure can get hectic! Therefore, keeping in mind the increased usage of Discord in our everyday life, we decided to make a bot that can help us, and our fellow students, keep organized and even offer a space to relax in the middle of our busy schedule!
+
+Hence, we came up with **Chronos**! Hopefully, this bot can have the positive impact on students' stressful lives and help them excel!
