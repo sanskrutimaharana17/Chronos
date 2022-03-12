@@ -46,8 +46,10 @@ Our bot can do all these things with scope for more to come!
 - 📫 How to reach me sukritee.sharma@gmail.com
 
 ## History 📘
-This team was formed for the sake of [She**Hacks**](https://shehacks.co/), the biggest female hackathon of the year 2022, organized by  IIIT Allahabad.
+This team was formed for [She**Hacks**](https://shehacks.co/), the biggest female hackathon of the year 2022, organized by  IIIT Allahabad.
 
-We, as students, know how hectic it could be to manage all the different assignments we get, the tests we have to take and all the competitions or hackathons that we are encouraged to participate in. It sure can get hectic! Therefore, keeping in mind the increased usage of Discord in our everyday life, we decided to make a bot that can help us, and our fellow students, keep organized and even offer a space to relax in the middle of our busy schedule!
+We, as students, know how hectic it could be to manage all the different assignments we get, the tests we have to take and all the competitions or hackathons that we are encouraged to participate in. It sure can get hectic! Therefore, keeping in mind the increased usage of Discord in our everyday life, we decided to make a bot that can help us, and our fellow students, keep organized and even offer a space to relax in the middle of our busy schedule! N
+
+But it's not limited till that :) This is a multi purpose thing for life and it will help make your discord life easy :) 
 
 Hence, we came up with **Chronos**! Hopefully, this bot can have the positive impact on students' stressful lives and help them excel!
