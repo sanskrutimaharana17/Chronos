@@ -8,13 +8,16 @@ client= discord.Client()
 
 def time_module(user_time_input):
     print("time module in use")
+  
     while True:
-        current_time = datetime.now().strftime("%H:%M")
-#hour %H min %M sec %S am:pm %p 
-        if current_time == user_time_input: # the time when reminder starts
-            print("time module ended")
-            break
-
+      tz_IN = pytz.timezone('Asia/Kolkata') 
+      datetime_IN = datetime.now(tz_IN)
+      now= datetime.now()
+      current_time = datetime_IN.strftime("%H:%M")
+      print(current_time)
+      if current_time == user_time_input:
+          print("time module ended")
+          break
 # def homework():
 #   print ("Complete your Homework!")
   
