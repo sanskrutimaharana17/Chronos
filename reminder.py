@@ -6,6 +6,7 @@ import pytz
 
 client= discord.Client()
 
+#smaller values are assigned for the sake of testing
 seconds_in_year=20
 #31536000
 seconds_in_day= 5
@@ -18,6 +19,7 @@ def time_module(user_time_input):
     print("time module in use...")
   
     while True:
+        #finds out the current time in the provided timezone
       tz_IN = pytz.timezone('Asia/Kolkata') 
       datetime_IN = datetime.now(tz_IN)
       current_time = datetime_IN.strftime("%H:%M")
@@ -27,11 +29,13 @@ def time_module(user_time_input):
           print("time module ended...")
           break
 
+ #shows that bot is activated
 @client.event
 async def on_ready():
   print("Logged in as {0.user}"
        .format(client))
 
+#to prevent the bot from replying to itself
 @client.event
 async def on_message(message):
   if message.author == client.user:
@@ -41,7 +45,7 @@ async def on_message(message):
 
 #main menu for selection
   if message.content.startswith('!remind'):
-    await channel.send('Hello :) \nWhat should I remind you about? Choose from:\n !education\n !health\n !custom')
+    await channel.send('\nHello :) \nWhat should I remind you about? Choose from:\n\n !education\n !health\n !custom')
 
     def check(m):
       return m.content in ['!education', '!health', '!custom'] and m.channel==channel
@@ -50,7 +54,7 @@ async def on_message(message):
 
     #Education menu
     if msg.content == '!education':
-      await channel.send("Cool :)\nHere's things you can do!!\n !homework\n !meet\n !test")
+      await channel.send("\nCool :)\nHere's a list of things you can do!!\n\n !homework\n !meet\n !test")
     
        #if user selects Homework
       def check(m):
@@ -59,7 +63,7 @@ async def on_message(message):
       msg= await client.wait_for('message', check=check)
       
       if msg.content == '!homework':
-        await channel.send("Cool :)\nShould I remind you !hourly or !daily ?")
+        await channel.send("\nCool :)\nShould I remind you !hourly or !daily ?")
         
         def check(m):
           return m.content in ['!hourly', '!daily'] and m.channel==channel
