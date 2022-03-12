@@ -25,8 +25,9 @@ Our bot can do all these things with scope for more to come!
 
 ### 🚀Samidha Thawait
 - 👋 I'm [Samidha](https://github.com/samidha28)
-- 📫 E-mail me at: samidha315@gmail.com
 - 😄 Pronouns: She/her
+- 🔭 Currently learning android development, Nodejs, python etc.
+- 📫 E-mail me at: samidha315@gmail.com
 - ⚡ Fun fact: Music is my sanity
 
 ### 🧠 Sanskruti Maharana
