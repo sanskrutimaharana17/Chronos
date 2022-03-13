@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 import random
@@ -86,5 +87,6 @@ async def mathsqrt(ctx, x: float):
 
 	except:
 		pass
+my_secret = os.environ['TOKEN']
+client.run(my_secret)
 
-client.run(os.getenv("TOKEN"))
