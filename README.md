@@ -2,17 +2,35 @@
 A smart discord bot 🤖 created especially for students.
 
 ## Features 🪶
-Our bot can do all these things with scope for more to come!
-- 📋 Create to-do list with ease
-- 📆 Access the users' schedule and get reminders if any deadline is nearing
-- 🎗️ Get continuous reminders to drink water, go to sleep and have an overall healthy lifestyle
-- 🧮 A calculator available for the students' immediate need
-- 🎵 Songs for relaxation after a long day's work!
+Our bot can do all the following things with scope for more to come!
+- 📋 Add reminders in catagories of education, health or any thing else
+- ⏰ The reminders can be set for any time of the day
+- 🧮 Help users with simple math!
 
 ## Commands Directory 💼
+### Reminders ⏰
+Following are the commands:
+- `!remind` - This is the initial wakeword to which the bot will respond as follows:\
 
-
-## How it works 📑
+![!remind](https://user-images.githubusercontent.com/87569188/158042711-e628a805-56a1-4315-9d75-c8e7592e4aa1.png)
+- Next we have three options:
+    1. `!education` - to add reminder in catagory of **education**. There are further 3 categories in _education_:
+       1.  `!homework` - to remind you about your homework. After selecting this option, we have further 2 options:
+            1.  `!hourly` - to be reminded about pending homework hourly
+            2.  `!daily` - to be reminded about pending homework daily
+       2.  `meet` - to remind you about any upcoming meeting or important class. After selecting this option, we get the message of setting a time for our meeting to get reminded about it:
+            1. `Enter time in HH:MM`  
+       3.  `test` - to remind you about an upcoming test. After selecting this option, we get the message of setting a time for the test to get reminded about it:
+            1. `Enter time in HH:MM`  
+    2. `!health`  - to add reminder in catagory of **health**. There are further 3 categories in _health_:
+       1.  `!water` - to remind to drink water. After selecting this option, we have further 2 options:
+            1.  `!hourly` - to be reminded about drinking water hourly
+            2.  `!daily` - to be reminded about drinking water daily
+       2.  `medicine` - to remind you about taking medicines. After selecting this option, we get the message of setting a time for taking the medicine to get reminded about it:
+            1. `Enter time in HH:MM`  
+       3.  `sleep` - to remind you to sleep and maintain a healthy schedule. After selecting this option, we get the message of setting a time to sleep:
+            1. `Enter time in HH:MM`  
+    3. `!custom` - to add a **custom** reminder. We get the output : `What should I remind you about?`. Here we can add the title to our reminder, and then enter the time to get reminded. 
 
 
 ## Meet the team 👩‍💻👩‍💻👩‍💻👩‍💻
