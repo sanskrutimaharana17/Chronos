@@ -34,6 +34,10 @@ def sqrt(n: float):
 def mult(n: float, n2: float):
 	return n * n2
 
+def exp(n: int):
+	return math.exp(n)
+
+
 @client.command()
 async def mathadd(ctx, x: float, y: float):
 	try:
@@ -83,6 +87,14 @@ async def mathmult(ctx, x: float, y: float):
 async def mathsqrt(ctx, x: float):
 	try:
 		result = sqrt(x)
+		await ctx.send(result)
+
+	except:
+		pass
+	@client.command()
+async def exp(ctx, x: int):
+	try:
+		result = exp(x)
 		await ctx.send(result)
 
 	except:
