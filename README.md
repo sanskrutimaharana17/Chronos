@@ -51,7 +51,7 @@ Following are the commands:
 ### 🧠 Sanskruti Maharana
 - 👋 Hi, I'm [Sanskruti Maharana](https://github.com/sanskrutimaharana17)
 - 👓 Learner
-- 🔭 I’m currently working on DSA
+- 🔭 I’m currently exploring lot of things
 - 📫 How to reach me sanskrutimaharana@gmail.com
 - ⚡ Fun fact I think I'm funny
 
